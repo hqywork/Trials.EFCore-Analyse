@@ -1,0 +1,26 @@
+﻿{
+  "description": "试验 EFCore 中值生成的实现，并分析其类关系及实现方式",
+    "authors": [ "HQYWORK" ],
+
+    "dependencies": {
+        "Microsoft.NETCore.App": {
+            "type": "platform",
+            "version": "1.1.0"
+        },
+        "microsoft.extensions.configuration.json": "1.1.0", 
+        "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
+        "xunit": "2.2.0-beta4-build3444",
+        "dotnet-test-xunit": "2.2.0-preview2-build1029"
+    },
+
+    "frameworks": {
+        "netcoreapp1.0": {
+        }
+    },
+
+    "testRunner": "xunit",
+
+    "buildOptions": {
+        "copyToOutput": ["appsettings.json"]
+    }
+}
