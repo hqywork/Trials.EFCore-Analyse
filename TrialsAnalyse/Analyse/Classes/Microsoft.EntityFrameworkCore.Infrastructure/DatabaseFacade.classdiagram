@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="401f890f-8fd8-492d-9362-8fb3550eaf83" name="DatabaseFacade" linkedPackageId="716891c5-dded-49ea-a008-b408302d7c9d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="4c9c53f5-2bde-4de3-96c5-8217ed12021f">
+      <profileInstance Id="bb18be8a-006f-40c0-b7af-c3f408706c73" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="ab9fc6f9-2b1b-4e23-8b4e-a18b1d8a8aeb">
+      <profileInstance Id="924f108c-748d-45dd-8637-2663ab186dd6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a6ef4e82-4abb-4224-8ecc-5e041f1d5162" name="DatabaseFacade" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e1652257-4b09-45cd-90d1-91a0d91b968a" />
+        <ownedOperationsInternal>
+          <operation Id="a40b25d4-8723-4394-a54b-31f41b6e6437" name="DatabaseFacade" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="aa3c9c7f-a1ae-4a92-a74a-a7200927491b" name="create" profile="StandardProfileL2">
+                <elementDefinition Id="c83e0596-9737-4637-8984-d0213bc875ea" />
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="f158624e-5958-43cb-8eb1-56f94e3f3bae" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="05bc9f65-9c59-43b3-841e-16e79ee7fbe6" name="context" direction="In">
+                  <elementDefinition Id="11f161c1-57e5-4dad-943e-1660f80d13f5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d070564b-fa21-4ac5-953a-ea2ecda42c50" LastKnownName="DbContext" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="91a1ef24-b807-48f6-a73b-cc0ce9105422" name="EnsureCreated" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6784f90d-2dd2-4afc-a527-418402bd9547" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2c10a5fb-23e5-404e-8f62-b9d128ab855d" direction="Return">
+                  <elementDefinition Id="91ce6885-8333-449b-a897-9ce111450649" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5bf951dd-519d-49c4-bf57-ae1de50d56cd" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e4ce3853-55fb-481e-937d-d18d0a82a17e" name="EnsureDeleted" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9179122a-5bf7-4c02-8e0a-2faa0d96d46d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8880355f-5637-45f6-840a-8ce1c43e2f2c" direction="Return">
+                  <elementDefinition Id="927c4759-ff42-4546-af4a-98a749039031" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7b9e0d1e-5ca3-47ad-8862-25ba81012680" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="d070564b-fa21-4ac5-953a-ea2ecda42c50" name="DbContext" isAbstract="false" isLeaf="false" cachedFullName="Analyse::DbContext">
+        <elementDefinition Id="bb82644b-0c4b-4083-b8b1-2fa24e4f268f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5bf951dd-519d-49c4-bf57-ae1de50d56cd" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7b9e0d1e-5ca3-47ad-8862-25ba81012680" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="716891c5-dded-49ea-a008-b408302d7c9d" name="Analyse">
+    <elementDefinition Id="b45c742e-b3d6-4952-b642-7335678bebfc" />
+  </package>
+</logicalClassDesignerModel>

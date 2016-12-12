@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="9b8a4963-f44f-4e61-b97e-3b67acfee7d8" name="IServiceCollection" linkedPackageId="cc263fd9-d1ca-4e16-a75e-c5ba9844011c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="bd995ce8-2804-4d5d-8edf-1fd3750a75c4" name="IServiceCollection" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b8888292-d495-4449-8ab8-da30cae8a41a" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f84f891c-278b-41f3-ba85-3e40beb8ef8e" name="ServiceCollection" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="044fdde0-c78d-42ea-b241-02709bdc3bd5" />
+        <suppliersInternal>
+          <interfaceRealization Id="5eef2b8b-6c3c-442d-8858-10fcac8f98ba">
+            <interfaceMoniker Id="bd995ce8-2804-4d5d-8edf-1fd3750a75c4" LastKnownName="IServiceCollection" />
+            <elementDefinition Id="d713ce66-53e3-43ec-b0aa-620ce733e09e" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="cc263fd9-d1ca-4e16-a75e-c5ba9844011c" name="Analyse">
+    <elementDefinition Id="b45c742e-b3d6-4952-b642-7335678bebfc" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e7c3dcbe-f715-434d-89d7-7d6e0011db53">
+        <profileInstance Id="88826b75-9c8d-44e2-ac53-235c215a8ff2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="811b5c40-bff3-412f-9270-7c0d1237c680">
+        <profileInstance Id="28b78bef-b3d1-4b11-ba7a-4a9c656da452" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

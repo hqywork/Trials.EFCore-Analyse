@@ -22,6 +22,97 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.ChangeTracking\ChangeTracker.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.ChangeTracking\ChangeTracker.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classes\Microsoft.EntityFrameworkCore.ChangeTracking\ChangeTracker.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.Infrastructure\DatabaseFacade.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.Infrastructure\DatabaseFacade.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classes\Microsoft.EntityFrameworkCore.Infrastructure\DatabaseFacade.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.Infrastructure\EntityFrameworkServiceCollectionExtensions.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.Infrastructure\EntityFrameworkServiceCollectionExtensions.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classes\Microsoft.EntityFrameworkCore.Infrastructure\EntityFrameworkServiceCollectionExtensions.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.Infrastructure\IDbContextOptions.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.Infrastructure\IDbContextOptions.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classes\Microsoft.EntityFrameworkCore.Infrastructure\IDbContextOptions.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.Infrastructure\IDbContextOptionsExtension.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.Infrastructure\IDbContextOptionsExtension.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classes\Microsoft.EntityFrameworkCore.Infrastructure\IDbContextOptionsExtension.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.Internal\CoreOptionsExtension.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.Internal\CoreOptionsExtension.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classes\Microsoft.EntityFrameworkCore.Internal\CoreOptionsExtension.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.Internal\IDbSetInitializer.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.Internal\IDbSetInitializer.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classes\Microsoft.EntityFrameworkCore.Internal\IDbSetInitializer.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.Internal\ServiceProviderCache.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore.Internal\ServiceProviderCache.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classes\Microsoft.EntityFrameworkCore.Internal\ServiceProviderCache.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore\DbContext.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore\DbContext.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classes\Microsoft.EntityFrameworkCore\DbContext.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore\DbContextOptions.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore\DbContextOptions.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classes\Microsoft.EntityFrameworkCore\DbContextOptions.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore\DbContextOptionsBuilder.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore\DbContextOptionsBuilder.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classes\Microsoft.EntityFrameworkCore\DbContextOptionsBuilder.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore\ModelBuilder.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classes\Microsoft.EntityFrameworkCore\ModelBuilder.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classes\Microsoft.EntityFrameworkCore\ModelBuilder.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Classes\Microsoft.Extensions.DependencyInjection\IServiceCollection.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Classes\Microsoft.Extensions.DependencyInjection\IServiceCollection.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Classes\Microsoft.Extensions.DependencyInjection\IServiceCollection.classdiagram</DependentUpon>
+    </Content>
     <Content Include="Sequence\Empty-Operation-for-SQL-Server.sequencediagram">
       <SubType>Content</SubType>
     </Content>
@@ -29,10 +120,16 @@
       <SubType>Content</SubType>
       <DependentUpon>Sequence\Empty-Operation-for-SQL-Server.sequencediagram</DependentUpon>
     </Content>
+    <Folder Include="Classes\Microsoft.EntityFrameworkCore" />
+    <Folder Include="Classes\Microsoft.EntityFrameworkCore.Infrastructure" />
+    <Folder Include="Classes\Microsoft.EntityFrameworkCore.ChangeTracking" />
+    <Folder Include="Classes\Microsoft.Extensions.DependencyInjection" />
+    <Folder Include="Classes\Microsoft.EntityFrameworkCore.Internal" />
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\Analyse.uml">
       <SubType>Content</SubType>
     </Content>
+    <Folder Include="Classes" />
     <Folder Include="Sequence" />
   </ItemGroup>
 </Project>

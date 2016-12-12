@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="8610da98-ec8d-4378-8ba1-6c6820f67f78" name="DbContextOptions" linkedPackageId="ffd815ed-37b1-4231-a29d-2be98b9afd6b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="ccd7b0bb-921d-4d57-8f47-2a670e4c1999">
+      <profileInstance Id="6fce5a0a-14cd-4c32-86e2-feee4b3d833e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6cbe4720-3a91-4f04-8b4e-0d49a11548c4">
+      <profileInstance Id="75b94f15-f4db-4782-8b24-dc25ce56e07b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="81694466-3044-4aa4-9764-d7ae9b9889bd" name="DbContextOptions" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e4583724-be73-42ee-8264-853c3719bd36" />
+        <ownedOperationsInternal>
+          <operation Id="f958b8b3-46d6-4696-b80b-3d081143558c" name="DbContextOptions" visibility="Protected" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="4f39e6ad-b484-4dda-8f56-150672944df7" name="create" profile="StandardProfileL2">
+                <elementDefinition Id="9cf5a876-d555-490f-8849-a6c5a6113025" />
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="2b6035a7-e0eb-4bb5-88bd-04d6559770a3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7a7a4a27-db2c-41f6-95a1-f4d804a1cd70" name="extensions" direction="In">
+                  <elementDefinition Id="62ed55b4-3167-4810-9485-315b6b8a9adc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5bd81c79-cb64-4e61-b29f-f1c236224326" LastKnownName="IReadOnlyDictionary&lt;Type, IDbContextOptionsExtension&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="84651acf-d8a0-4243-be21-6a6e18c0d640" name="FindExtension&lt;TExtension&gt;" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="88767e72-02c2-425f-a20d-89cb11bf373a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="097a6ec5-45a7-4a31-92d9-4a05295ad4cc" direction="Return">
+                  <elementDefinition Id="3c892be5-b924-47fd-b9ac-ec65a81230fc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fc9e9032-3bbf-4949-aae4-e616200a224a" LastKnownName="TExtension" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a4984a7b-1cda-4d76-ab4c-d48b1a8ca1e5" name="DbContextOptions&lt;TContext&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="86313374-542f-42a2-86d2-eef232656e66" />
+        <generalsInternal>
+          <generalization Id="8ecc0a9a-88a8-4098-958d-183a49bd05a9" isSubstitutable="false">
+            <classMoniker Id="81694466-3044-4aa4-9764-d7ae9b9889bd" LastKnownName="DbContextOptions" />
+            <elementDefinition Id="27a2bd0b-a686-474a-9326-9dd04e1fd1fb" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="56d62c4e-c259-476e-a3fb-a680df07b59b" name="DbContextOptions" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="751a8797-9ae7-48b7-ae93-4e411194c064" name="create" profile="StandardProfileL2">
+                <elementDefinition Id="1cb64b41-95bc-4466-8def-4274b924f118" />
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="3097ece2-f914-4cf6-ad32-4566e0e5fdd6" />
+          </operation>
+          <operation Id="134f787c-1327-47fd-b3ac-456eea0f1131" name="DbContextOptions" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="fd19e217-a5a9-48ca-898b-8b18ff63b55b" name="create" profile="StandardProfileL2">
+                <elementDefinition Id="94a227cd-9a42-4a18-94da-32927e90af3e" />
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="1fdc579d-dcfb-400d-bf69-0f3f79253780" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="691c3f89-4ce3-4120-9698-dd6abc606f27" name="extensions" direction="In">
+                  <elementDefinition Id="bc726331-7e89-4ae8-a55c-d7e2f62d378f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5bd81c79-cb64-4e61-b29f-f1c236224326" LastKnownName="IReadOnlyDictionary&lt;Type, IDbContextOptionsExtension&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="5bd81c79-cb64-4e61-b29f-f1c236224326" name="IReadOnlyDictionary&lt;Type, IDbContextOptionsExtension&gt;" isAbstract="false" isLeaf="false" cachedFullName="IReadOnlyDictionary&lt;Type, IDbContextOptionsExtension&gt;">
+        <elementDefinition Id="1ef14869-bf86-43a9-8ba7-fc16ef552c55" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fc9e9032-3bbf-4949-aae4-e616200a224a" name="TExtension" isAbstract="false" isLeaf="false" cachedFullName="TExtension">
+        <elementDefinition Id="c760177a-8c14-48d2-be0f-8472ff9d6cb2" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="ffd815ed-37b1-4231-a29d-2be98b9afd6b" name="Analyse">
+    <elementDefinition Id="b45c742e-b3d6-4952-b642-7335678bebfc" />
+  </package>
+</logicalClassDesignerModel>

@@ -16,11 +16,13 @@ namespace Trials.Lifecycle
             IConfiguration conf = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
                 .Build();
-            optionsBuilder.UseSqlServer(conf["ConnectionStrings:DefaultConnection"]);
+            optionsBuilder.UseSqlServer(conf.GetConnectionString("ConnectionStrings:DefaultConnection"));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<SimpleEntity>()
+                        .ToTable("Simple");
         }
     }
 }

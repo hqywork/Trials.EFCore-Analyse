@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="53758f70-fce9-4a51-8966-46fd74a5720f" name="ChangeTracker" linkedPackageId="cc75526d-bc7b-4bb1-91b7-84f20b13fa9b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="54276bd0-2403-4f03-9e7d-3ca56078f0c3">
+      <profileInstance Id="402873aa-8141-416a-8c2b-f1b09e3ab4aa" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a6ad009f-930f-4166-ad36-7b1688535054">
+      <profileInstance Id="33f4eb70-d93d-43c0-981c-fa1cf8b0a52e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1519dd2b-2713-4b0c-8c38-3905f9a2c215" name="ChangeTracker" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a0edd1b9-f974-4b1d-9d4c-021193a6e0e2" />
+        <ownedOperationsInternal>
+          <operation Id="4241ce70-8aba-464c-b8cd-a32afd1821af" name="ChangeTracker" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="65906636-8bd8-45b0-9d10-6df7ade592f0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fc10f075-57ed-4c70-be6a-69b38a4a1d0f" name="context" direction="In">
+                  <elementDefinition Id="d3f47d98-18a7-42e5-a6ca-5f5b8960c7f0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e4b07422-66ad-4132-a438-2190cdcbfa90" LastKnownName="DbContext" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="e4b07422-66ad-4132-a438-2190cdcbfa90" name="DbContext" isAbstract="false" isLeaf="false" cachedFullName="Analyse::DbContext">
+        <elementDefinition Id="bb82644b-0c4b-4083-b8b1-2fa24e4f268f" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="cc75526d-bc7b-4bb1-91b7-84f20b13fa9b" name="Analyse">
+    <elementDefinition Id="b45c742e-b3d6-4952-b642-7335678bebfc" />
+  </package>
+</logicalClassDesignerModel>

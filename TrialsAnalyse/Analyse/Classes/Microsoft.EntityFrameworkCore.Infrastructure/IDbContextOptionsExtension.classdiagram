@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="e47d5112-d714-42d7-9420-c1f35110c344" name="IDbContextOptionsExtension" linkedPackageId="8f360e6c-a423-4a70-9178-1a03fcad3c27" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="54e7b687-618f-4ad8-ad8f-78ec56de7531" name="IDbContextOptionsExtension" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="261762f5-aec5-4216-acda-d30789cfe719" />
+        <ownedOperations>
+          <operation Id="49e3b79c-15d4-4473-9d30-aef247aadf9a" name="ApplyServices" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9566a955-8886-4306-af10-6fec8ef9a9b1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="58f865e5-d189-4f84-9cea-b9fb992a5c9e" name="services" direction="In">
+                  <elementDefinition Id="0d7a5865-9c45-48ec-8c63-6ee39c4ef3aa" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d33b0ecd-a77f-49f9-9b00-9c93bbb4a9e8" LastKnownName="IServiceCollection" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="d33b0ecd-a77f-49f9-9b00-9c93bbb4a9e8" name="IServiceCollection" isAbstract="false" isLeaf="false" cachedFullName="Analyse::IServiceCollection">
+        <elementDefinition Id="b8888292-d495-4449-8ab8-da30cae8a41a" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="8f360e6c-a423-4a70-9178-1a03fcad3c27" name="Analyse">
+    <elementDefinition Id="b45c742e-b3d6-4952-b642-7335678bebfc" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a8b1ed5e-33ca-40dd-ba3a-86da0f87d51f">
+        <profileInstance Id="dc9fb651-cddc-4a2f-87d9-16cd370628d9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0af66501-0ec6-4fb1-b6ae-81eafc3ed85e">
+        <profileInstance Id="27b560eb-db3b-455f-85e9-481e74c5368d" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

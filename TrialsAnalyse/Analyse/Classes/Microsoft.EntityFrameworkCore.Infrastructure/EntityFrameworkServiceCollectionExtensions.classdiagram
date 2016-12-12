@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="83b86921-7238-4aa5-a63f-f8a40e699940" name="EntityFrameworkServiceCollectionExtensions" linkedPackageId="5175379a-4274-4eb5-95bf-244175511100" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="7f018786-01b7-4d9a-8d60-7f06d285905d">
+      <profileInstance Id="58b516fa-6de3-4e33-a3a8-92ca54b713f0" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="871f6855-929e-456a-8a51-d65bb821ba74">
+      <profileInstance Id="4c85e19b-e5e7-4560-b6bf-b42cad326e50" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="427383df-af6d-4c6e-8368-7b324be7d719" name="EntityFrameworkServiceCollectionExtensions" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d167a3a7-1f07-430d-a0cf-4390e3a9a144" />
+        <ownedOperationsInternal>
+          <operation Id="23474763-9482-4ca5-b940-6ea753e2f123" name="AddEntityFramework" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c6b83e02-aa33-41b7-9509-640fe68da3e7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="71040f82-b861-47bc-b75b-53aa9ada92d3" name="serviceCollection" direction="In">
+                  <elementDefinition Id="5da4d106-8fc1-400a-a7c1-e2d716143ee6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8ad34faf-c5a5-49c0-8614-39e7029d5cd3" LastKnownName="IServiceCollection" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="03c08a28-ba2d-45f0-bf3c-be5e9f011bfa" direction="Return">
+                  <elementDefinition Id="949689ab-d77e-4234-b102-7359e4fdc8fc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c4513a9a-ec28-429c-908d-b1848ac9f172" LastKnownName="IServiceCollection" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="8ad34faf-c5a5-49c0-8614-39e7029d5cd3" name="IServiceCollection" isAbstract="false" isLeaf="false" cachedFullName="Analyse::IServiceCollection">
+        <elementDefinition Id="b8888292-d495-4449-8ab8-da30cae8a41a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c4513a9a-ec28-429c-908d-b1848ac9f172" name="IServiceCollection" isAbstract="false" isLeaf="false" cachedFullName="Analyse::IServiceCollection">
+        <elementDefinition Id="b8888292-d495-4449-8ab8-da30cae8a41a" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="5175379a-4274-4eb5-95bf-244175511100" name="Analyse">
+    <elementDefinition Id="b45c742e-b3d6-4952-b642-7335678bebfc" />
+  </package>
+</logicalClassDesignerModel>

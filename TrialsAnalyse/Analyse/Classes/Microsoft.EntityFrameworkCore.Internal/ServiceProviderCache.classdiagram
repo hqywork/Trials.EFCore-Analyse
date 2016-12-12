@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="69934214-d0ed-4a17-8ad6-f999ab9a7a66" name="ServiceProviderCache" linkedPackageId="86171377-07f0-47ed-9970-3fddd0ac1258" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="f584d33f-d273-4c9f-a000-d030ad39c48c">
+      <profileInstance Id="aafd5efb-fc0c-4181-944c-1a9843b7bfa6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4b5423f9-38d3-4d75-ac69-1a77756c0b6c">
+      <profileInstance Id="79885d47-380a-4d5c-9d0d-86a9b0bd6112" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9ceee940-2b5d-4a9f-89d6-81a5d45a8234" name="ServiceProviderCache" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3eb4ce07-851a-4ff1-872f-46d2f44d6aee" />
+        <ownedAttributesInternal>
+          <property Id="3b1b6d70-ba18-4b45-ad25-7e0077431a8a" name="Instance" isLeaf="false" isStatic="true" isReadOnly="true" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="57f43533-84d8-4bfe-ad4d-1033a5c60792" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="fb071121-27da-407d-997c-7698e9fb3ebe" LastKnownName="ServiceProviderCache" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="94bf11bb-9d91-4af4-b176-e84df50555fd" name="GetOrAdd" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="812784de-42d3-4f20-aec8-83008d58ec00" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9b504e01-3870-4fad-b2b7-e2aac0718838" name="options" direction="In">
+                  <elementDefinition Id="08ff3c6f-6e04-4157-8202-d6cd50643954" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a2095b26-2aa0-45fa-adce-79e571e88e5c" LastKnownName="IDbContextOptions" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="32b5604b-9942-44dd-8ebe-eba93a71b60e" direction="Return">
+                  <elementDefinition Id="f5e9ea74-4683-412d-8527-f8389c5ab2fe" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6c084bcc-f01a-461f-8fa0-fb858ee4c4af" LastKnownName="IServiceProvider" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="fb071121-27da-407d-997c-7698e9fb3ebe" name="ServiceProviderCache" isAbstract="false" isLeaf="false" cachedFullName="Analyse::ServiceProviderCache">
+        <elementDefinition Id="3eb4ce07-851a-4ff1-872f-46d2f44d6aee" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a2095b26-2aa0-45fa-adce-79e571e88e5c" name="IDbContextOptions" isAbstract="false" isLeaf="false" cachedFullName="Analyse::IDbContextOptions">
+        <elementDefinition Id="99c4a8cf-a37a-499f-9ad3-f37791fa866d" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6c084bcc-f01a-461f-8fa0-fb858ee4c4af" name="IServiceProvider" isAbstract="false" isLeaf="false" cachedFullName="IServiceProvider">
+        <elementDefinition Id="2fb1ba92-54c1-4ca5-93fc-7dc80d82dd10" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="86171377-07f0-47ed-9970-3fddd0ac1258" name="Analyse">
+    <elementDefinition Id="b45c742e-b3d6-4952-b642-7335678bebfc" />
+  </package>
+</logicalClassDesignerModel>

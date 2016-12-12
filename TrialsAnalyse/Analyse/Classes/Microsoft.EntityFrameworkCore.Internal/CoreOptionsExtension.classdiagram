@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="b9cd445e-9a21-4f13-a43d-af50659d4af1" name="CoreOptionsExtension" linkedPackageId="b3a9c4f7-8e21-404f-9a74-baf8f29f84c4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="db6fde5c-8675-4349-a642-3e50b1d47940" name="CoreOptionsExtension" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9b253085-2afe-4f97-bf8c-046452da4341" />
+        <ownedAttributesInternal>
+          <property Id="70061788-baf1-4b46-8b4c-dabdca239323" name="InternalServiceProvider" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f301588e-fd7a-4976-9317-3b99d58b4821" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2a09c9cd-b2d6-4677-ae4c-cfd645330268" LastKnownName="IServiceProvider" />
+            </type_NamedElement>
+          </property>
+          <property Id="da0b5452-5cfe-4b7e-b82f-5c978d86d0d9" name="ReplacedServices" isLeaf="false" isStatic="false" isReadOnly="true" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="979dffc9-95d4-441f-bc64-53ebfcac841d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="fd26b5ea-6b09-495f-9c0c-55deed5c7818" LastKnownName="IReadOnlyDictionary&lt;Type, Type&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="c527902d-d1dc-46c9-ae3e-35fbcc38faef" name="CoreOptionsExtension" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="699961f1-351a-4c1b-b685-f5058f22ae56" />
+          </operation>
+          <operation Id="f41b3a23-d69c-477c-8ec1-3378bd082136" name="CoreOptionsExtension" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b6848d4b-4a87-4370-8a56-4ee93966d691" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b8fe2a79-fda7-4e93-b1d2-500910968f3f" name="copyFrom" direction="In">
+                  <elementDefinition Id="eeb8b3db-f081-44e8-96c4-ef1b7c63fcda" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="aef9450a-6210-4d89-a925-f9c070095595" LastKnownName="CoreOptionsExtension" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="516bf3d1-5d16-4a0b-bf4c-f409c7cd43a2" name="ReplaceService" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cca940c7-ef2f-407d-a96e-eb9785084439" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8e0a41f3-dc32-42f0-9efb-6008611d2486" name="serviceType" direction="In">
+                  <elementDefinition Id="91210181-b069-4aa3-ae03-6f013be118e4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="507d0f56-dd33-4047-a9ff-dcb3d495b24a" LastKnownName="Type" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="887db7a0-7ff4-436f-ab1e-4f94f62972b8" name="implementationType" direction="In">
+                  <elementDefinition Id="f822a7b4-e085-4ed4-a60b-504e31af7a43" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="507d0f56-dd33-4047-a9ff-dcb3d495b24a" LastKnownName="Type" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="aef9450a-6210-4d89-a925-f9c070095595" name="CoreOptionsExtension" isAbstract="false" isLeaf="false" cachedFullName="Analyse::CoreOptionsExtension">
+        <elementDefinition Id="9b253085-2afe-4f97-bf8c-046452da4341" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2a09c9cd-b2d6-4677-ae4c-cfd645330268" name="IServiceProvider" isAbstract="false" isLeaf="false" cachedFullName="IServiceProvider">
+        <elementDefinition Id="2fb1ba92-54c1-4ca5-93fc-7dc80d82dd10" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="507d0f56-dd33-4047-a9ff-dcb3d495b24a" name="Type" isAbstract="false" isLeaf="false" cachedFullName="Type">
+        <elementDefinition Id="378dd4a8-1f2c-40a9-a8a8-b738e5c951db" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fd26b5ea-6b09-495f-9c0c-55deed5c7818" name="IReadOnlyDictionary&lt;Type, Type&gt;" isAbstract="false" isLeaf="false" cachedFullName="IReadOnlyDictionary&lt;Type, Type&gt;">
+        <elementDefinition Id="8208e763-05f0-4da1-be71-ec31a8f63212" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="b3a9c4f7-8e21-404f-9a74-baf8f29f84c4" name="Analyse">
+    <elementDefinition Id="b45c742e-b3d6-4952-b642-7335678bebfc" />
+    <profileInstances>
+      <packageHasProfileInstances Id="9f0d17ef-025e-4efa-b23d-7387469145c3">
+        <profileInstance Id="afce9c95-bdf2-4603-a2d0-249e2312af46" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="24934535-e0ab-490a-9a63-c90bd58377b4">
+        <profileInstance Id="9de298ca-aa7c-4790-9711-45d664e76c30" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

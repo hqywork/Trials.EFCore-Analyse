@@ -240,3 +240,12 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/TrialsAnalyse/Analyse/Classes/Microsoft.EntityFrameworkCore/ModelBuilder.classdiagram.layout
+/TrialsAnalyse/Analyse/Classes/Microsoft.EntityFrameworkCore/DbContextOptionsBuilder.classdiagram.layout
+/TrialsAnalyse/Analyse/Classes/Microsoft.EntityFrameworkCore/DbContextOptions.classdiagram.layout
+/TrialsAnalyse/Analyse/Classes/Microsoft.EntityFrameworkCore/DbContext.classdiagram.layout
+/TrialsAnalyse/Analyse/Classes/Microsoft.EntityFrameworkCore.ChangeTracking/ChangeTracker.classdiagram.layout
+/TrialsAnalyse/Analyse/Classes/Microsoft.EntityFrameworkCore.Infrastructure/DatabaseFacade.classdiagram.layout
+/TrialsAnalyse/Analyse/Classes/Microsoft.Extensions.DependencyInjection/IServiceCollection.classdiagram.layout
+/TrialsAnalyse/Analyse/Classes/Microsoft.EntityFrameworkCore.Internal/ServiceProviderCache.classdiagram.layout
+*.layout
