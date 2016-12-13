@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="6ecb5957-48cd-4ec8-9276-d493e5f7e323" name="IDbSetFinder" linkedPackageId="76075465-8c54-4e24-a4d3-07abd5f14efc" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="df9b40f1-e345-4c65-9ed3-bd269d2a85d1" name="IDbSetFinder" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9e88ddf1-6181-4f15-9874-09b509f0b89f" />
+        <ownedOperations>
+          <operation Id="e5ff1a95-db5b-4f5b-8ce9-66c4f4bdffb5" name="FindSets" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e1901166-2969-485e-b49a-9aecc1ff9fb1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9baf9066-0b53-407c-9352-392e952adb77" name="context" direction="In">
+                  <elementDefinition Id="090b1ee6-9d17-4c82-b568-25cf668f088d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5ac8599f-4426-4392-9531-b09a7615a910" LastKnownName="DbContext" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b75c5a33-c8f5-4c37-892f-27cdfe618620" direction="Return">
+                  <elementDefinition Id="78155d88-f42e-4dba-b30d-0c0ca56e55f5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4f995ce4-e29e-41f9-855b-881ae3826779" LastKnownName="IReadOnlyList&lt;DbSetProperty&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="5ac8599f-4426-4392-9531-b09a7615a910" name="DbContext" isAbstract="false" isLeaf="false" cachedFullName="Analyse::DbContext">
+        <elementDefinition Id="bb82644b-0c4b-4083-b8b1-2fa24e4f268f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4f995ce4-e29e-41f9-855b-881ae3826779" name="IReadOnlyList&lt;DbSetProperty&gt;" isAbstract="false" isLeaf="false" cachedFullName="IReadOnlyList&lt;DbSetProperty&gt;">
+        <elementDefinition Id="8f9427d2-4dee-4114-b987-b491f28551b6" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="76075465-8c54-4e24-a4d3-07abd5f14efc" name="Analyse">
+    <elementDefinition Id="b45c742e-b3d6-4952-b642-7335678bebfc" />
+    <profileInstances>
+      <packageHasProfileInstances Id="305ca769-4aa8-40f7-acb1-490b8ad0c632">
+        <profileInstance Id="c875cdd9-1525-4364-9cce-4bf9139ed046" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="6f32e1c2-14fb-45c1-bd41-3ee0dc8c6021">
+        <profileInstance Id="aa4b2031-4434-432b-8058-6c82814bb848" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

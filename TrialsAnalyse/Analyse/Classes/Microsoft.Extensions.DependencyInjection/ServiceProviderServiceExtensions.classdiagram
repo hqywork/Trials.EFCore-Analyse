@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="5cb51de2-c12f-437c-a456-ef063cef302b" name="ServiceProviderServiceExtensions" linkedPackageId="607fb87b-86a7-43f0-913d-25bc37e4a2d8" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="2f5f59c8-d061-4fa4-a1ec-6593b19bf8d7">
+      <profileInstance Id="7027388e-8ca1-4007-b198-82428496128c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="18f1faa4-9f1b-4684-b838-e85e054f768a">
+      <profileInstance Id="7ceb52fc-03bc-4847-8055-ee24128a7a3b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cc12690d-e5bd-44ba-94ef-ebb37d8e1312" name="ServiceProviderServiceExtensions" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5bf8865e-1bb7-4628-b798-c08f1c4b4208" />
+        <ownedOperationsInternal>
+          <operation Id="dde100f4-3838-4ceb-9821-b01c4866ddd3" name="GetService&lt;T&gt;" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7101123f-0f3f-44f2-96a6-f188955103c6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="55f69bad-3539-4df7-839e-2b1d6d38f219" direction="Return">
+                  <elementDefinition Id="aa2429ca-7883-418e-8e80-b5aa05257030" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="0d9d4843-6e5c-4f26-8827-8c41535ecf92" LastKnownName="T" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="83db7f59-9023-4337-9e7f-63229e301ab4" name="provider" direction="In">
+                  <elementDefinition Id="0e9204a3-fe19-4b0a-9ffa-3d9becb1dbce" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="af6bceec-f8f6-4d47-b0a6-06c937e778a9" LastKnownName="IServiceProvider" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="0d9d4843-6e5c-4f26-8827-8c41535ecf92" name="T" isAbstract="false" isLeaf="false" cachedFullName="T">
+        <elementDefinition Id="6dd9d6f4-0f42-4124-b384-ec24b8e1c9f3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="af6bceec-f8f6-4d47-b0a6-06c937e778a9" name="IServiceProvider" isAbstract="false" isLeaf="false" cachedFullName="IServiceProvider">
+        <elementDefinition Id="2fb1ba92-54c1-4ca5-93fc-7dc80d82dd10" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="607fb87b-86a7-43f0-913d-25bc37e4a2d8" name="Analyse">
+    <elementDefinition Id="b45c742e-b3d6-4952-b642-7335678bebfc" />
+  </package>
+</logicalClassDesignerModel>

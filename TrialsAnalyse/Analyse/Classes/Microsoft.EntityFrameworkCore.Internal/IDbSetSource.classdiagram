@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="7338119b-9244-487f-8cf7-cf088983a8b7" name="IDbSetSource" linkedPackageId="352983b4-a5f3-4b0e-a9eb-9e086f44942c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="966d35bc-0319-4ad8-a6b0-b3fca77dcf3e" name="IDbSetSource" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="96473376-836c-4fb2-a9f3-aedac1404eb6" />
+        <ownedOperations>
+          <operation Id="3eb57f0f-bb6d-499f-ba05-970b1685376f" name="Create" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="95da30a6-edd1-4476-a0b0-4d6230bbfa7e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f239db78-1ce2-4f8b-a16e-e83fbc7bcadc" name="context" direction="In">
+                  <elementDefinition Id="ba45d839-d4b1-4bd1-9fcd-d628386b3c84" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="02879669-d62e-412d-873f-d94333718f1c" LastKnownName="DbContext" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0dc07de3-dae7-46f0-b528-060fd923df4b" name="type" direction="In">
+                  <elementDefinition Id="962bdc70-9e06-4736-a856-9850e9e78eea" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="cb224b37-460a-4fd2-94d5-7c35b5decc79" LastKnownName="Type" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cc3edd14-49a5-4165-98a7-9df46fb7754b" direction="Return">
+                  <elementDefinition Id="0c626c08-971e-4277-a4df-ee3839218742" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a4ee9a29-f34c-479b-a438-b67638fa8afd" LastKnownName="object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="02879669-d62e-412d-873f-d94333718f1c" name="DbContext" isAbstract="false" isLeaf="false" cachedFullName="Analyse::DbContext">
+        <elementDefinition Id="bb82644b-0c4b-4083-b8b1-2fa24e4f268f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cb224b37-460a-4fd2-94d5-7c35b5decc79" name="Type" isAbstract="false" isLeaf="false" cachedFullName="Type">
+        <elementDefinition Id="378dd4a8-1f2c-40a9-a8a8-b738e5c951db" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a4ee9a29-f34c-479b-a438-b67638fa8afd" name="object" isAbstract="false" isLeaf="false" cachedFullName="object">
+        <elementDefinition Id="ab8cb63e-a18f-406a-820f-d2e456c5c753" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="352983b4-a5f3-4b0e-a9eb-9e086f44942c" name="Analyse">
+    <elementDefinition Id="b45c742e-b3d6-4952-b642-7335678bebfc" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8c37fd18-feed-4c80-8a14-9296eacc843f">
+        <profileInstance Id="bfb64986-f9f3-4d38-842c-6cbdc894719c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="690468d9-02cc-43e7-bf3b-df2e1bb797b7">
+        <profileInstance Id="dd17df83-8208-4df4-8104-bf43f4e687ed" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Trials.Entitys;
 using Xunit;
 
 namespace Trials.Lifecycle
@@ -15,10 +16,21 @@ namespace Trials.Lifecycle
     public class SqlServerLifecycleTest
     {
         /// <summary>
-        /// 创建 <see cref="DbContext"/> 实例，在开始后确保数据库已创建，不进行任何增、删、改、查等操作，在结束时确保数据库已清除。
-        /// </summary>
-        [Fact(DisplayName = "Empty Operation for SQL Server")]
-        public void EmptyOperationTest()
+        /// <para>EF Core 无操作过程测试。</para>
+        /// <para>
+        /// 执行内容包含：
+        /// <list type="number">
+        /// <item><description>构造 <see cref="DbContext"/> 的实例</description></item>
+        /// <item><description>确保数据库已创建</description></item>
+        /// <item><description>在 <see cref="DbContext.OnConfiguring(DbContextOptionsBuilder)"/> 中连接数据库</description></item>
+        /// <item><description>在 <see cref="DbContext.OnModelCreating(ModelBuilder)"/> 中配置实体 <see cref="SimpleEntity"/>。</description></item>
+        /// <item><description>在最后确保数据库已删除</description></item>
+        /// <item><description>注销 <see cref="DbContext"/> 的实例</description></item>
+        /// </list>
+        /// </para>
+        ///  </summary>
+        [Fact(DisplayName = "No operation process for SQL Server")]
+        public void NoOperationProcessTest()
         {
             using (var context = new DbContextBySqlServerLifecycle())
             {

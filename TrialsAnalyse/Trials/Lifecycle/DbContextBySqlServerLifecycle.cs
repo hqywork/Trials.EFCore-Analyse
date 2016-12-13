@@ -16,7 +16,7 @@ namespace Trials.Lifecycle
             IConfiguration conf = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
                 .Build();
-            optionsBuilder.UseSqlServer(conf.GetConnectionString("ConnectionStrings:DefaultConnection"));
+            optionsBuilder.UseSqlServer(conf.GetConnectionString("DefaultConnection"));
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
